@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# The Journey
 
-Things you may want to cover:
+## Step I0
 
-* Ruby version
+- Model --> the object that will be stored in the database
 
-* System dependencies
+ done using `bin/rails generate model Article` in the terminal
 
-* Configuration
+- migration file --> determines the format of the data in the db
 
-* Database creation
+ file of interest: `db/migrate/(timestamp)_create_article.rb`
 
-* Database initialization
+- Adding data points
 
-* How to run the test suite
+ first, run `bin/rails console`
 
-* Services (job queues, cache servers, search engines, etc.)
+ then, create an Article object using ` a = Article.new`
 
-* Deployment instructions
+ set `a.title` and `a.body` (or whatever variables it holds)
 
-* ...
+ finally, push it to the db with `a.save`
+
+ display all articles with `Article.all`
+
+- Router --> defines relationship between 7 core actions, and their respective URI patterns and HTTP verbs
+
+ check your routes with `bin/rake routes`
