@@ -27,3 +27,7 @@
 - Router --> defines relationship between 7 core actions, and their respective URI patterns and HTTP verbs
 
  check your routes with `bin/rake routes`
+
+ - Controller --> defines what exactly will happen when each of the 7 core actions execute
+
+  it involves making the method in the controller, then defining what will show up on your screen using the `.html.erb` file
