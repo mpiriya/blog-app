@@ -1,8 +1,8 @@
-# README
-
 # The Journey
 
 ## Step I0
+
+- To start the server run `bin/rails server`
 
 - Model --> the object that will be stored in the database
 
